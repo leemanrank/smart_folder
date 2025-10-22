@@ -151,20 +151,26 @@ cd smart_folder
 - **[RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md)** - 출시 체크리스트
 - **[RELEASE_GUIDE.md](RELEASE_GUIDE.md)** - 상세한 출시 가이드
 - **[PLAY_STORE_LISTING.md](PLAY_STORE_LISTING.md)** - Play Store 등록 정보
+- **[graphics/GRAPHICS_GUIDE.md](graphics/GRAPHICS_GUIDE.md)** - 그래픽 에셋 가이드
 
 ### 빠른 시작
 
 1. ✅ **빌드 완료됨**
-   - Release APK: `app/build/outputs/apk/release/`
-   - Release AAB: `app/build/outputs/bundle/release/`
+   - Release AAB: `app/build/outputs/bundle/release/app-release.aab` (서명됨)
+   - 키스토어: `app/smart-folder-release.jks`
 
-2. ⚠️ **필수 작업**
-   - [ ] 키스토어 생성 및 서명
+2. ✅ **그래픽 에셋 준비됨**
+   - 앱 아이콘 SVG: `graphics/app-icon/app-icon.svg`
+   - Feature Graphic SVG: `graphics/feature-graphic/feature-graphic.svg`
+   - 스크린샷 템플릿: `graphics/screenshots/screenshot-template.svg`
+   - 📖 가이드: [GRAPHICS_GUIDE.md](graphics/GRAPHICS_GUIDE.md)
+
+3. ⚠️ **필수 작업**
    - [ ] AdMob App ID 변경 (현재 테스트 ID)
-   - [ ] 개인정보처리방침 URL 생성
+   - [ ] SVG를 PNG로 변환 (앱 아이콘, Feature Graphic)
+   - [ ] 스크린샷 캡처 (최소 2개)
 
-3. 📋 **선택 작업**
-   - [ ] 그래픽 에셋 준비 (아이콘, 스크린샷 등)
+4. 📋 **선택 작업**
    - [ ] Google Play Console 등록
 
 ---
