@@ -38,8 +38,9 @@ Desktop.ini
 *.swp
 *.bak
 
-# Firebase (optional - uncomment if you want to keep google-services.json private)
-# google-services.json
+# Firebase - IMPORTANT: Never commit!
+google-services.json
+app/google-services.json
 
 # Build outputs
 app/build/
