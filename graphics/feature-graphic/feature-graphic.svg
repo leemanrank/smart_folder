@@ -1,0 +1,124 @@
+<svg width="1024" height="500" viewBox="0 0 1024 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="folderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDB813;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#f3f4f6;stop-opacity:0.95" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="60" fill="white" opacity="0.1"/>
+  <circle cx="924" cy="400" r="80" fill="white" opacity="0.1"/>
+  <circle cx="850" cy="100" r="40" fill="white" opacity="0.15"/>
+
+  <!-- Left side: App Icon and Title -->
+  <g transform="translate(100, 250)">
+    <!-- App icon circle -->
+    <circle cx="0" cy="0" r="70" fill="white" opacity="0.2"/>
+    <circle cx="0" cy="0" r="65" fill="url(#bgGrad)"/>
+
+    <!-- Folder icon -->
+    <g transform="scale(0.6)">
+      <path d="M -60 -30 L -60 40 Q -60 50 -50 50 L 50 50 Q 60 50 60 40 L 60 -20 Q 60 -30 50 -30 L -40 -30 L -55 -45 Q -60 -50 -60 -40 Z"
+            fill="url(#folderGrad)"
+            stroke="#D97706"
+            stroke-width="3"/>
+      <!-- AI symbol -->
+      <circle cx="0" cy="5" r="12" fill="#3B82F6" stroke="white" stroke-width="2"/>
+      <line x1="-8" y1="-3" x2="-18" y2="-15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      <line x1="8" y1="-3" x2="18" y2="-15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      <line x1="-8" y1="13" x2="-18" y2="25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      <line x1="8" y1="13" x2="18" y2="25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Title text -->
+    <text x="100" y="10" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">
+      Smart Folder
+    </text>
+    <text x="100" y="45" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.9">
+      AI 기반 스마트 파일 정리
+    </text>
+  </g>
+
+  <!-- Right side: Phone mockup -->
+  <g transform="translate(700, 250)">
+    <!-- Phone frame -->
+    <rect x="-90" y="-200" width="180" height="360" rx="20" fill="#1f2937" opacity="0.8"/>
+    <rect x="-85" y="-195" width="170" height="350" rx="18" fill="url(#phoneGrad)"/>
+
+    <!-- Phone screen content -->
+    <g transform="translate(0, -100)">
+      <!-- Header -->
+      <rect x="-75" y="-85" width="150" height="30" rx="8" fill="#667eea"/>
+      <text x="0" y="-62" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+        Smart Folder
+      </text>
+
+      <!-- File categories -->
+      <g transform="translate(0, -30)">
+        <!-- Images -->
+        <rect x="-70" y="0" width="65" height="50" rx="8" fill="#FDB813" opacity="0.8"/>
+        <text x="-37" y="30" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">📸 사진</text>
+
+        <!-- Videos -->
+        <rect x="5" y="0" width="65" height="50" rx="8" fill="#3B82F6" opacity="0.8"/>
+        <text x="37" y="30" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">🎬 영상</text>
+      </g>
+
+      <g transform="translate(0, 35)">
+        <!-- Documents -->
+        <rect x="-70" y="0" width="65" height="50" rx="8" fill="#10B981" opacity="0.8"/>
+        <text x="-37" y="30" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">📄 문서</text>
+
+        <!-- Music -->
+        <rect x="5" y="0" width="65" height="50" rx="8" fill="#F59E0B" opacity="0.8"/>
+        <text x="37" y="30" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">🎵 음악</text>
+      </g>
+
+      <!-- AI badge -->
+      <g transform="translate(0, 110)">
+        <rect x="-40" y="0" width="80" height="25" rx="12" fill="#3B82F6"/>
+        <text x="0" y="17" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">
+          🤖 AI 자동분류
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom feature badges -->
+  <g transform="translate(512, 460)">
+    <g transform="translate(-250, 0)">
+      <rect x="-55" y="-15" width="110" height="30" rx="15" fill="white" opacity="0.2"/>
+      <text x="0" y="6" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+        🔍 중복 탐지
+      </text>
+    </g>
+
+    <g transform="translate(0, 0)">
+      <rect x="-55" y="-15" width="110" height="30" rx="15" fill="white" opacity="0.2"/>
+      <text x="0" y="6" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+        📊 파일 통계
+      </text>
+    </g>
+
+    <g transform="translate(250, 0)">
+      <rect x="-55" y="-15" width="110" height="30" rx="15" fill="white" opacity="0.2"/>
+      <text x="0" y="6" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+        🔔 스마트 알림
+      </text>
+    </g>
+  </g>
+</svg>
