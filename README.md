@@ -95,11 +95,13 @@ app/
 
 ```bash
 # 1. 저장소 클론
-git clone [repository-url]
-cd Smart_Folder_1
+git clone https://github.com/leemanrank/smart_folder.git
+cd smart_folder
 
-# 2. Firebase 설정
-# google-services.json 파일을 app/ 디렉토리에 추가
+# 2. Firebase 설정 (필수!)
+# Firebase Console에서 google-services.json 다운로드
+# app/ 디렉토리에 google-services.json 파일 추가
+# 자세한 내용은 아래 "Firebase 설정" 섹션 참조
 
 # 3. Debug 빌드
 ./gradlew assembleDebug
@@ -108,6 +110,31 @@ cd Smart_Folder_1
 ./gradlew assembleRelease  # APK
 ./gradlew bundleRelease    # AAB (권장)
 ```
+
+### Firebase 설정
+
+이 프로젝트는 Firebase를 사용하므로 `google-services.json` 파일이 필요합니다.
+
+1. **Firebase Console 접속**
+   - https://console.firebase.google.com/ 방문
+   - 새 프로젝트 생성 또는 기존 프로젝트 선택
+
+2. **Android 앱 추가**
+   - 패키지 이름: `com.example.smart_folder_1`
+   - 앱 닉네임: Smart Folder (선택사항)
+   - SHA-1 서명 인증서: 나중에 추가 가능
+
+3. **google-services.json 다운로드**
+   - Firebase에서 `google-services.json` 파일 다운로드
+   - 파일을 `app/` 디렉토리에 복사
+
+4. **Firebase 서비스 활성화**
+   - Cloud Messaging (FCM) - 푸시 알림용
+   - Analytics - 사용자 분석용
+
+**⚠️ 보안 주의사항:**
+- `google-services.json` 파일은 Git에 커밋되지 않습니다
+- 각 개발자는 자신의 Firebase 프로젝트를 사용해야 합니다
 
 ### Android Studio에서 실행
 1. Android Studio에서 프로젝트 열기
