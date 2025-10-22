@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Modern Folder with Gradient -->
+    <group>
+        <!-- Folder Body -->
+        <path
+            android:pathData="M25,48 L25,85 Q25,90 30,90 L90,90 Q95,90 95,85 L95,53 Q95,48 90,48 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:startX="60"
+                    android:startY="48"
+                    android:endX="60"
+                    android:endY="90"
+                    android:type="linear">
+                    <item android:offset="0" android:color="#FF006781"/>
+                    <item android:offset="1" android:color="#FF0288A6"/>
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <!-- Folder Tab -->
+        <path
+            android:fillColor="#FF004D61"
+            android:pathData="M25,42 Q25,38 29,38 L46,38 Q48,38 49,40 L53,46 Q54,48 56,48 L88,48 Q92,48 95,48 L95,53 Q95,48 90,48 L25,48 Z" />
+
+        <!-- Folder Highlight -->
+        <path
+            android:fillColor="#33FFFFFF"
+            android:pathData="M28,52 L28,82 Q28,85 31,85 L89,85 Q90,85 90,84 L90,52 Z"
+            android:fillAlpha="0.1" />
+    </group>
+
+    <!-- AI Brain Symbol (Modern & Minimalist) -->
+    <group android:translateX="60" android:translateY="67">
+        <!-- Brain Outline -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2.5"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:fillColor="#00000000"
+            android:pathData="M-12,-8 Q-12,-12 -8,-12 Q-4,-12 -4,-10 Q-4,-8 -2,-8 Q0,-8 0,-10 Q0,-12 4,-12 Q8,-12 8,-8 L8,4 Q8,8 4,8 L-4,8 Q-8,8 -8,4 Z" />
+
+        <!-- Neural Connection Dots -->
+        <path
+            android:fillColor="#90CAF9"
+            android:pathData="M-6,-4 A1.5,1.5 0 1,1 -6,-1 A1.5,1.5 0 1,1 -6,-4 Z" />
+        <path
+            android:fillColor="#90CAF9"
+            android:pathData="M0,-2 A1.5,1.5 0 1,1 0,1 A1.5,1.5 0 1,1 0,-2 Z" />
+        <path
+            android:fillColor="#90CAF9"
+            android:pathData="M6,-4 A1.5,1.5 0 1,1 6,-1 A1.5,1.5 0 1,1 6,-4 Z" />
+        <path
+            android:fillColor="#BEE9FF"
+            android:pathData="M-3,3 A1.2,1.2 0 1,1 -3,5.4 A1.2,1.2 0 1,1 -3,3 Z" />
+        <path
+            android:fillColor="#BEE9FF"
+            android:pathData="M3,3 A1.2,1.2 0 1,1 3,5.4 A1.2,1.2 0 1,1 3,3 Z" />
+    </group>
+
+    <!-- Smart Sparkle (Top Right) -->
+    <path
+        android:fillColor="#90CAF9"
+        android:pathData="M88,32 L89,36 L93,37 L89,38 L88,42 L87,38 L83,37 L87,36 Z" />
+
+</vector>

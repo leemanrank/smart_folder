@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Smart Folder</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_app_name">Smart Folder</string>
+    <string name="splash_subtitle">AI 기반 파일 자동 정리</string>
+    <string name="splash_loading">로딩 중...</string>
+    <string name="splash_footer">파일을 스마트하게 관리하세요</string>
+</resources>
