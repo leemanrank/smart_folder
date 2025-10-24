@@ -6,15 +6,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.smart_folder_1"
-    compileSdk = 34
+    namespace = "com.smartfolder.app"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.smart_folder_1"
+        applicationId = "com.smartfolder.app"
         minSdk = 26
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0.0"
+        targetSdk = 35
+        versionCode = 2
+        versionName = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
@@ -24,11 +24,10 @@ android {
 
     signingConfigs {
         create("release") {
-            // 키스토어 설정 - 아래 값들을 실제 키스토어 정보로 변경하세요
-            storeFile = file("release-keystore.jks") // 키스토어 파일 경로
-            storePassword = System.getenv("KEYSTORE_PASSWORD") ?: "your_keystore_password"
-            keyAlias = System.getenv("KEY_ALIAS") ?: "your_key_alias"
-            keyPassword = System.getenv("KEY_PASSWORD") ?: "your_key_password"
+            storeFile = file("smart-folder-release.jks")
+            storePassword = "smartfolder2025"
+            keyAlias = "smart_folder_key"
+            keyPassword = "smartfolder2025"
         }
     }
 
@@ -40,8 +39,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            // 서명 설정 활성화 (키스토어 생성 후 주석 해제)
-            // signingConfig = signingConfigs.getByName("release")
+            signingConfig = signingConfigs.getByName("release")
         }
         debug {
             isMinifyEnabled = false
